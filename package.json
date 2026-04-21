@@ -1,0 +1,44 @@
+{
+  "name": "easy-pqc-wrapper",
+  "version": "0.1.0",
+  "description": "A user-friendly wrapper for Post-Quantum Cryptography (ML-KEM/Kyber)",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "tsup src/index.ts --watch",
+    "build": "tsup src/index.ts --format cjs,esm --dts --clean",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "tsc --noEmit"
+  },
+  "keywords": [
+    "pqc",
+    "kyber",
+    "ml-kem",
+    "cryptography",
+    "post-quantum",
+    "typescript"
+  ],
+  "author": "Donny Kurniawan",
+  "license": "MIT",
+  "dependencies": {
+    "@noble/post-quantum": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^1.0.0"
+  }
+}
