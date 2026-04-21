@@ -1,4 +1,6 @@
 # easy-pqc-wrapper
+![Build Status](https://github.com/doniiawan/easy-pqc-wrapper/actions/workflows/test.yml/badge.svg)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 A simple, user-friendly wrapper for Post-Quantum Cryptography (PQC), specifically targeting the **ML-KEM (Kyber)** key encapsulation mechanism. Powered by the reliable [`@noble/post-quantum`](https://github.com/paulmillr/noble-post-quantum) library.
 
